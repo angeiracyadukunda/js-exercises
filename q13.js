@@ -15,5 +15,5 @@ function displayPattern(rows) {
   }
   
   // Call the function with the number of rows you want
-  displayPattern(5);
+ ` displayPattern(5);`
   
