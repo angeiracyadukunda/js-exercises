@@ -4,7 +4,7 @@ function displayPattern(rows) {
   
       for (let j = 0; j < rows; j++) {
         if (j === rows - i - 1) {
-          rowPattern += "1 ";
+          rowPattern += "1 ";  
         } else {
           rowPattern += "  ";
         }

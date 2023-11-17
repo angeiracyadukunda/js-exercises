@@ -9,11 +9,9 @@ function displayPattern(rows) {
           rowPattern += "0 ";
         }
       }
-  
       console.log(rowPattern);
     }
   }
-  
   // Call the function with the number of rows you want
   displayPattern(4);
   
