@@ -14,7 +14,7 @@
     const bmi = weight / (height * height);
   
     // Determine the BMI classification
-    let classification;  
+    let classification;    
     if (bmi < 18.5) {
         classification = 'Underweight';
     } else if (bmi >= 18.5 && bmi < 24.9) {
