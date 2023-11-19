@@ -1,7 +1,10 @@
-function calculateArraySum(array) {
-    return array.reduce((sum, num) => sum + num, 0);
+function printObjectProperties(obj) {
+    for (let prop in obj) {
+        console.log(prop);
+    }
 }
 
 // Example usage:
-const numbersArray = [1, 2, 3, 4, 5];
-console.log("Sum of array elements:", calculateArraySum(numbersArray));
+const sampleObject = { name: 'John', age: 25, city: 'Example City' };
+console.log("Object Properties:");
+printObjectProperties(sampleObject);

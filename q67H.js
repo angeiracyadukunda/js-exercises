@@ -1,19 +1,20 @@
-function bubbleSort(array) {
-    const n = array.length;
 
-    for (let i = 0; i < n - 1; i++) {
-        for (let j = 0; j < n - 1 - i; j++) {
-            if (array[j] > array[j + 1]) {
-                // Swap elements if they are in the wrong order
-                [array[j], array[j + 1]] = [array[j + 1], array[j]];
-            }
+
+function accessNestedObject(obj, keys) {
+    let result = obj;
+
+    for (let key of keys) {
+        if (result[key]) {
+            result = result[key];
+        } else {
+            return "Key not found in the nested object";
         }
     }
 
-    return array;
+    return result;
 }
 
 // Example usage:
-const unsortedArray = [5, 2, 8, 3, 1, 7];
-console.log("Unsorted array:", unsortedArray);
-console.log("Sorted array:", bubbleSort(unsortedArray));
+const nestedObject = { a: { b: { c: 'nested value' } } };
+const nestedKeys = ['a', 'b', 'c'];
+console.log("Value from the nested object:", accessNestedObject(nestedObject, nestedKeys));

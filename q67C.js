@@ -1,8 +1,9 @@
-function reverseArray(array) {
-    return array.slice().reverse();
+
+
+function searchForKey(obj, key) {
+    return key in obj ? obj[key] : "Key not found";
 }
 
 // Example usage:
-const originalArray = [1, 2, 3, 4, 5];
-console.log("Original array:", originalArray);
-console.log("Reversed array:", reverseArray(originalArray));
+const searchKey = 'age';
+console.log(`\nValue for key ${searchKey}:`, searchForKey(sampleObject, searchKey));

@@ -1,9 +1,9 @@
-function findElementIndex(array, target) {
-    const index = array.indexOf(target);
-    return index !== -1 ? index : "Element not found";
+function mergeObjects(obj1, obj2) {
+    return { ...obj1, ...obj2 };
 }
 
 // Example usage:
-const numbersArray = [10, 20, 30, 40, 50];
-const targetElement = 30;
-console.log(`Index of ${targetElement}:`, findElementIndex(numbersArray, targetElement));
+const object1 = { a: 1, b: 2 };
+const object2 = { c: 3, d: 4 };
+const mergedObject = mergeObjects(object1, object2);
+console.log("Merged object:", mergedObject);
